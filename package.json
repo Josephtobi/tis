@@ -1,0 +1,28 @@
+{
+  "name": "expedition-vii",
+  "version": "1.0.0",
+  "description": "Official website for the expedition conference",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chani24/Expedition-VII.git"
+  },
+  "author": "Ani Chidera James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chani24/Expedition-VII/issues"
+  },
+  "homepage": "https://github.com/chani24/Expedition-VII#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
