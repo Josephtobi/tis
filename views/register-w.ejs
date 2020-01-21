@@ -39,7 +39,104 @@
 
 
             
-        </ul></nav></header></div>
+        </ul></nav></header>
+    </div>
+
+
+        <h1 class="register-sign">Workshop <span class="h1r"> registration</span></h1>
+        <hr class="container">
+
+        <form action="/register-w" method="POST" class="container">
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="F-name-w">First Name</label>
+                    <input name="FirstName" type="text" class="form-control" id="F-name-w" aria-describedby="F-name-w" placeholder="Enter your first name">
+                </div>
+
+                <div class="form-group col-6">
+                    <label for="L-name-w">Last name </label>
+                    <input name="LastName" type="text" class="form-control" id="L-name-w" aria-describedby="L-name-w" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-7">
+                    <label for="Email-c">Email address</label>
+                    <input name="Email" type="email" class="form-control" id="Email-c" aria-describedby="email" placeholder="Enter a valid Email address">
+                </div>
+                <div class="form-group col-5">
+                    <label for="tel-w">Phone number</label>
+                    <input name="Phone" type="tel" class="form-control" id="tel-w" aria-describedby="tel-w" placeholder="Enter a valid phone number">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="inputSchool">School</label>
+                    <select name="School" id="inputSchool" class="form-control">
+                      <option value="University of Lagos">University of Lagos</option>
+                      <option value="University of Ibadan">University of Ibadan</option>
+                      <option value="Convenant University">Convenant University</option>
+                      <option value="Babcock University">Babcock University</option>
+                      <option value="Pan-Atlantic University">Pan-Atlantic University</option>
+                      <option value="Obafemi Awolowo University">Obafemi Awolowo University</option>
+                      <option value="Lagos state University">Lagos state University</option>
+                      <option value="Federal College of Education">Federal College of Education</option>
+                      <option value="Caleb University">Caleb University</option>
+                      <option value="other..." >other...</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-4">
+                    <label for="inputDept">Department</label>
+                    <select name="Department" id="inputDept" class="form-control">
+                      <option value="Economics">Economics</option>
+                      <option value="Accounting">Accounting</option>
+                      <option value="Political Science">Political Science</option>
+                      <option value="Sociology">Sociology</option>
+                      <option value="Law">Law</option>
+                      <option value="Mass Communication">Mass Communication</option>
+                      <option value="Creative Arts">Creative Arts</option>
+                      <option value="Theatre Arts">Theatre Arts</option>
+                      <option value="Business Administration">Business Administration</option>
+                      <option value="other">other...</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-2">
+                    <label for="inputLevel">Level</label>
+                    <select name="Level" id="inputLevel" class="form-control">
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="300">300</option>
+                      <option value="400">400</option>
+                    </select>
+                  </div>
+                
+            </div>
+            
+            <div class="row">
+
+                <div class="form-group col-3">
+                    <label for="inputVlass">Class</label>
+                    <select name="ClassType" id="inputClass" class="form-control">
+                      <option value="Forex">Forex</option>
+                      <option value="Balet">Balet</option>
+                      <option value="Fishing">Fishing</option>
+                      <option value="Singing">Singing</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-9">
+                    <label for="Textarea1">Reason</label>
+                    <textarea name="Reason" class="form-control" id="Textarea1" rows="2" Tell us why you want to register...></textarea>
+                  </div>
+
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn">Register</button>
+            </div>
+        </form>
         
     </div>
     
