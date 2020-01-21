@@ -1,5 +1,7 @@
 body{
     color: rgb(255, 255, 255);
+    overflow: hidden;
+    
 }
 
 .background{
@@ -18,5 +20,89 @@ a{
     color: white;
 }
 a:hover{
-    color: rgb(202, 0, 0);
+    color: rgb(240, 4, 0);
 }
+.btn{
+    background-color: rgb(240, 4, 0);
+    color: rgb(255, 255, 255);
+}
+.btn:hover{
+    background-color: rgb(131, 15, 15);
+    color: rgb(255, 255, 255);
+    
+}
+.h1r{
+    color: rgb(240, 4, 0); 
+    
+}
+
+hr {
+    border-top: 1px solid rgb(255, 255, 255);
+  }
+  form{
+      background-color: rgba(255, 255, 255, 0.18);
+      padding-bottom: 10px;
+      border-radius: 6px;
+      color: rgb(240, 4, 0); 
+      font-weight: 400;
+  }
+  .btn-container{
+      display: flex;
+      justify-content: center;
+      position: relative;
+    z-index: 1;
+  }
+  .register-sign{
+      text-align: center;
+  }
+  .form-control {
+    border: 1px  rgb(240, 4, 0);
+  }
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgb(228, 65, 65);
+    outline: 0;
+    box-shadow: 0 0 4.8px 0.18rem rgb(185, 38, 38);
+  }
+  .logo{
+      width: 100%;
+      max-width: 180px;
+      height: 100%;
+      margin-left: 0;
+  }
+  nav{
+      background-color: #0d0d0d;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      margin-right: 0;
+      width: 100vw;
+  }
+  .firstflex{
+      display: flex;
+  }
+  .secondflex{
+    display: none;
+}
+.dropdown-menu{
+    background-color: #0d0d0d;
+}
+.dropdown-toggle:focus{
+    color:  rgb(240, 4, 0);
+}
+.dropdown-item{
+   color: rgb(255, 255, 255) ;
+}
+.dropdown-item:hover{
+    background-color: #0d0d0d; 
+    color:  rgb(240, 4, 0);
+}
+  @media only screen and (max-width: 600px){
+    .firstflex{
+        display: none;
+    } 
+    .secondflex{
+        display: block;
+    }
+  }
+
