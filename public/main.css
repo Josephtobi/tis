@@ -65,30 +65,11 @@ hr {
     outline: 0;
     box-shadow: 0 0 4.8px 0.18rem rgb(185, 38, 38);
   }
-  .logo{
-      width: 100%;
-      max-width: 150px;
-      height: 100%;
-      margin-left: 0;
-  }
-  nav{
-      background-color: #0d0d0d;
-      padding-top: 7px;
-      padding-bottom: 7px;
-      margin-right: 0;
-     
-  }
-  .header{
-    width: 100vw;
-  }
-  .firstflex{
-      display: flex;
-  }
-  .secondflex{
-    display: none;
-}
+  
+ 
+ 
 .dropdown-menu{
-    background-color: #0d0d0d;
+    background-color: #000000;
 }
 .dropdown-toggle:focus{
     color:  rgb(240, 4, 0);
@@ -97,20 +78,111 @@ hr {
    color: rgb(255, 255, 255) ;
 }
 .dropdown-item:hover{
-    background-color: #0d0d0d; 
+    background-color: #000000; 
     color:  rgb(240, 4, 0);
 }
 .page-footer{
     justify-content: center;
     background-color: rgb(255, 255, 255, 0.00);
     color: red;
+    z-index: auto;
 }
-  @media only screen and (max-width: 600px){
-    .firstflex{
-        display: none;
-    } 
-    .secondflex{
-        display: block;
+  
+
+
+/* davidson*/
+
+
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height:8vh;
+    font-family:'Poppins', sans-serif;
+    background-color: black;
+    
+    z-index: 1000;
+  }
+  .logo{
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    margin-left: 0;
+}
+  .nav-links {
+    display:flex;
+    justify-content:space-around;
+    width:50%;
+  }
+  .nav-links li{
+  list-style: none;
+  }
+ 
+  .burger{
+    display:none;
+    cursor:pointer;
+  }
+  .burger div{
+    width:25px;
+    height:3px;
+    background-color:white;
+    margin:5px;
+    transition: all 0.3s ease;
+    z-index: auto;
+  }
+  @media screen and (max-width:1024px){
+    .nav-links {
+      width:60%;
     }
+  }
+  
+  @media screen and (max-width:768px){
+    body{
+      overflow-x: hidden;
+    }
+  .nav-links {
+    position:absolute;
+    right:0px;
+    height:92vh;
+    top:8vh;
+    background-color: inherit;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:50%;
+    transform:translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity:0;
+  }
+  .burger{
+    display: block;
+  }
+  
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+  @keyframes navLinkFade{
+    from{
+      opacity:0;
+      transform:translateX(50px);
+    }
+    to{
+      opacity:1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2{
+    opacity:0;
+  }
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+  
   }
 
