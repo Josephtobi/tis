@@ -5,6 +5,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const conferencePost = require('./post-controller/conference-controller')
 const workshopPost = require('./post-controller/workshop-controller')
+var port = process.env.PORT || 3000;
 
 
 app.set('view engine', 'ejs');
@@ -54,11 +55,9 @@ app.use('/partners',(req, res, next) => {
 
 app.use('/',(req, res, next) => {
     res.render('home');
+    console.log(process.env);
+    
 });
 
 
-
-
-
-
-app.listen(8000);
+app.listen(port);
