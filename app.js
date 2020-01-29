@@ -55,7 +55,6 @@ app.use('/partners',(req, res, next) => {
 
 app.use('/',(req, res, next) => {
     res.render('home');
-    console.log(process.env);
     
 });
 
