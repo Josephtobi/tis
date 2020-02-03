@@ -104,6 +104,7 @@ hr {
     
     z-index: 1000;
   }
+  .submitted{font-family:'Poppins', sans-serif;}
   .logo{
     width: 100%;
     max-width: 150px;

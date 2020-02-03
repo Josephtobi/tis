@@ -1,20 +1,16 @@
 const http = require('http');
 const express = require('express');
 const app = express();
-const path = require('path');
 const bodyParser = require('body-parser');
-const conferencePost = require('./post-controller/conference-controller')
-const workshopPost = require('./post-controller/workshop-controller')
-var port = process.env.PORT || 3000;
+const conferencePost = require('./post-controller/conference-controller');
+const workshopPost = require('./post-controller/workshop-controller');
+const port = process.env.PORT || 3000;
+const sequelize = require('./database');
 
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 app.use(express.static('public'));
-
-
-
-
 
 http.createServer(app);
 
@@ -32,9 +28,9 @@ app.get('/register-w',(req, res, next) => {
     res.render('register-w');
 });
 
-app.post('/register-c',conferencePost.postFunction);
+app.post('/register-c', conferencePost.postFunction);
 
-app.post('/register-w',workshopPost.postFunction);
+app.post('/register-w', workshopPost.postFunction);
 
 app.get('/submitted',(req, res, next) => {
     res.render('submitted');
@@ -57,6 +53,10 @@ app.use('/',(req, res, next) => {
     res.render('home');
     
 });
+
+sequelize.sync()
+.then(res => console.log('e dey work oh'))
+.catch(err => console.log(err));
 
 
 app.listen(port);
