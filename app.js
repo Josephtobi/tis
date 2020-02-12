@@ -5,7 +5,10 @@ const bodyParser = require('body-parser');
 const conferencePost = require('./post-controller/conference-controller');
 const workshopPost = require('./post-controller/workshop-controller');
 const port = process.env.PORT || 3000;
-const sequelize = require('./database');
+const mongoConnection = require('./database');
+const mongoConnect = mongoConnection.mongoConnect;
+const getDb = mongoConnection.getDb;
+
 
 
 app.set('view engine', 'ejs');
@@ -54,9 +57,7 @@ app.use('/',(req, res, next) => {
     
 });
 
-sequelize.sync()
-.then(res => console.log('e dey work oh'))
-.catch(err => console.log(err));
-
-
-app.listen(port);
+mongoConnect(client => {
+    console.log(client);
+   app.listen(port);
+})
