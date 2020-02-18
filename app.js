@@ -57,7 +57,4 @@ app.use('/',(req, res, next) => {
     
 });
 
-mongoConnect(client => {
-    console.log(client);
-   app.listen(port);
-})
+
