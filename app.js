@@ -57,9 +57,8 @@ app.use('/',(req, res, next) => {
     
 });
 
-app.listen(port);
-
 mongoConnect(client => {
-console.log(client)});
+console.log(client)
+app.listen(port);});
 
 
