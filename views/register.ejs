@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Events at The Investment Society, Unilag.">
+    <meta name="TIS, UNILAG, ULSIS, Investment, Investment Society, Colloquium, Colloquium 2020">
+    <meta name="author" content="Ani Chidera">
+    <title>Colloquium registration- The Investment Society</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+  <body>
+    <style>
+      body{
+        background-image: linear-gradient(to bottom right, rgb(145, 16, 63), #571397);
+        font-family: 'Montserrat', sans-serif;
+    }
+    .main{
+      width: 100%;
+      height: auto;
+      display: flex;
+    }
+
+    .form-div{
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2); 
+      font-size: 0.78rem;
+      font-weight: 300;
+      padding-top: 10px;
+    }
+    .heading{
+      width: 50%;
+      height: 100% !important;
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+    }
+    .heading h1{
+      font-weight: 900;
+    }
+    .heading1{
+      display: none;
+    }   
+
+    input, select{
+      background-color: rgb(240, 233, 236) !important;
+    }
+
+    @media screen and (max-width:768px){
+    .main{
+      display: block;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .heading{
+      display: none;
+    }
+
+    .form-div{
+      width: 100%;
+    }
+    .heading1{
+      display: inline-block;
+      font-weight: 650;
+    color: rgb(66, 8, 29);}
+    }
+    
+    </style>
+
+      <div class="content">
+        <header class="header"><nav>
+          <div class="logo-div">
+            <img src="logo.png" alt="" class="img-fluid container logo">
+          </div> 
+          <ul class="nav nav-links">
+            <li class=""><a class="nav-link " href="/home">Home</a></li>
+            <li class=""><a class="nav-link" href="/about">About us</a></li>
+            <li class=""><a class="nav-link" href="/events">Events</a></li>
+            <li class=""><a class="nav-link" href="https://tisunilag.typeform.com/to/NDO0dx">Join</a></li>
+           </ul>
+
+           <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle btn-special" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="/home">Home</a>
+              <a class="dropdown-item" href="about">About us</a>
+              <a class="dropdown-item" href="/events">Events</a>
+              <a class="dropdown-item" href="/https://tisunilag.typeform.com/to/NDO0dx">Join</a>
+            </div>
+          </div>
+        </nav>
+      
+      </header>
+          <br>
+          <br>
+          
+
+          <div class="container main">
+            <div class="heading">
+              
+              <span><h3>The</h3></span>
+              <span><h1>Colloquium</h1></span>
+              <span><h2>2020</h2></span>
+              <br>
+              <span><h5>Register</h5></span>
+            </div>
+
+            
+            <div class="form-div container">
+              <form action="/register" method="POST" >
+
+                <h3 class="heading1">The Colloquium 2020, Register</h3>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="F-name-c">First Name</label>
+                        <input style="background-color: rgb(252, 175, 203)" name="FirstName" type="text" class="form-control" id="F-name-c" aria-describedby="F-name-c" placeholder="Enter your first name" required>
+                    </div>
+    
+                    <div class="form-group col-6">
+                        <label for="L-name-c">Last name </label>
+                        <input name="LastName" type="text" class="form-control" id="L-name-c" aria-describedby="L-name-c" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-7">
+                        <label for="Email-c">Email address</label>
+                        <input name="Email" type="email" class="form-control" id="Email-c" aria-describedby="email" placeholder="Enter a valid Email address" required>
+                    </div>
+                    <div class="form-group col-5">
+                        <label for="tel-c">Phone number</label>
+                        <input name="Phone" type="tel" class="form-control" id="tel-c" aria-describedby="tel-c" placeholder="Enter a valid phone number" required>
+                    </div>
+    
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="inputSchool">School</label>
+                        <select name="School" id="inputSchool" class="form-control">
+                          <option value="University of Lagos">University of Lagos</option>
+                          <option value="University of Ibadan">University of Ibadan</option>
+                          <option value="Convenant University">Convenant University</option>
+                          <option value="Babcock University">Babcock University</option>
+                          <option value="Pan-Atlantic University">Pan-Atlantic University</option>
+                          <option value="Obafemi Awolowo University">Obafemi Awolowo University</option>
+                          <option value="Lagos state University">Lagos state University</option>
+                          <option value="Federal College of Education">Federal College of Education</option>
+                          <option value="Caleb University">Caleb University</option>
+                          <option value="other..." >other...</option>
+                        </select>
+                      </div>
+    
+                      <div class="form-group col-4">
+                        <label for="inputDept">Department</label>
+                        <select name="Department" id="inputDept" class="form-control">
+                          <option value="Economics">Economics</option>
+                          <option value="Accounting">Accounting</option>
+                          <option value="Political Science">Political Science</option>
+                          <option value="Sociology">Sociology</option>
+                          <option value="Law">Law</option>
+                          <option value="Mass Communication">Mass Communication</option>
+                          <option value="Creative Arts">Creative Arts</option>
+                          <option value="Theatre Arts">Theatre Arts</option>
+                          <option value="Business Administration">Business Administration</option>
+                          <option value="other">other...</option>
+                        </select>
+                      </div>
+    
+                      <div class="form-group col-2">
+                        <label for="inputLevel">Level</label>
+                        <select name="Level" id="inputLevel" class="form-control">
+                          <option value="100">100</option>
+                          <option value="200">200</option>
+                          <option value="300">300</option>
+                          <option value="400">400</option>
+                        </select>
+                      </div>
+                    
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn" style="background-color: #4f108aaf;">Register</button>
+                </div>
+            </form>
+            </div>
+          </div>
+
+          
+          
+
+
+          <!--page footer-->
+          <footer>
+            <nav class="page-footer navbar">
+              <a class="navbar-brand" href="https://www.instagram.com/tisunilag/?hl=en"><img src="instagram.png" alt="" srcset=""></a>
+              <a class="navbar-brand" href="mailto:ulsisinfo@mail.com"><img src="mail-16.png" alt="" srcset=""></a>
+              <a class="navbar-brand" href="https://www.linkedin.com/company/tisunilag"><img src="linkedin.png" alt="" srcset=""></a>
+            </nav>
+          </footer>
+          <footer>
+            <nav class="page-footer" style="color: white; font-size: 10px;">&copy; Copyright 2020 The Investment Society</nav>
+          </footer>
+          
+      </div>
+      
+
+      
+      
+      
+  <script src="nav.js"></script>   
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+  </body>
+</html>

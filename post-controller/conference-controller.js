@@ -1,59 +1,15 @@
-const getDb = require('../database').getDb;
-const nodemailer = require('nodemailer');
-const sendgridTransport = require('nodemailer-sendgrid-transport');
-const transporter = nodemailer.createTransport(sendgridTransport({
-    auth: {
-        api_key: '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'
-    }
-}))
+const mongoose = require('mongoose');
 
-class conferenceEntry{
-    constructor(FirstName, LastName, Email, Phone, School, Department, Level){
-        this.FirstName = FirstName;
-        this.LastName = LastName;
-        this.Email = Email;
-        this.Phone = Phone;
-        this.School = School;
-        this.Department = Department;
-        this.Level = Level;
-    }
-
-    save(){
-        const db = getDb();
-      return  db.collection('conferenceEntries')
-        .insertOne(this)
-        .then(res => console.log(res))
-        .catch(err => console.log(err));
-       
-    }
-}
+const postSchema = mongoose.Schema({
+  FirstName: {type: String, required: true},
+  LastName: {type: String, required: true},
+  Email: {type: String, required: true},
+  Phone: {type: String, required: true},
+  School: {type: String, required: true},
+  Department: {type: String, required: true},
+  Level: {type: String, required: true}
+});
 
 
-exports.postFunction = (req, res, next) => {
-    const FirstName = req.body.FirstName;
-    const LastName = req.body.LastName;
-    const Email = req.body.Email;
-    const Phone = req.body.Phone;
-    const School =req.body.School;
-    const Department = req.body.Department;
-    const Level = req.body.Level;
+module.exports = mongoose.model('Post', postSchema);
 
-    const entry = new conferenceEntry(FirstName,
-        LastName,Email, Phone, School, Department, Level);
-
-        entry
-        .save()
-        .then(res => {console.log('done');
-         return transporter.sendMail({
-            to: Email,
-            from: 'TheExpeditionTeam',
-            subject: 'Conference registeration',
-            html:`<img src="https://i.ibb.co/YymR8xM/logo1.png" border="0" alt="logo" width="150px" height="auto">
-            <p><span style="color: rgb(240, 4, 0);">Congratulations</span>, ${FirstName}.</p> <p>You have succesfully signed up for The Expedition conference 7 and will be updated accordingly.</p>`
-          });
-        })
-        .catch(err => console.log(err))
-    res.redirect('/submitted');
-}
-
-exports.conferenceEntry = conferenceEntry;

@@ -2,12 +2,18 @@ const http = require('http');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const conferencePost = require('./post-controller/conference-controller');
-const workshopPost = require('./post-controller/workshop-controller');
+const mongoose = require('mongoose')
+const Post = require('./post-controller/conference-controller')
+mongoose.connect('mongodb+srv://Theulsis:TheTIS123.@colloquium-data-qe7ip.mongodb.net/test?retryWrites=true&w=majority')
+.then(()=>{
+  console.log('e don connect !')
+})
+.catch((err)=>{
+  console.log(err)
+})
+
 const port = process.env.PORT || 3000;
-const mongoConnection = require('./database');
-const mongoConnect = mongoConnection.mongoConnect;
-const getDb = mongoConnection.getDb;
+
 
 
 
@@ -22,43 +28,43 @@ app.use('/home',  (req, res, next) => {
     res.render('home', {});
 });
 
-
-app.get('/register-c',(req, res, next) => {
-    res.render('register-c');
+app.get('/events',(req, res, next) => {
+    res.render('events');
 });
 
-app.get('/register-w',(req, res, next) => {
-    res.render('register-w');
+app.get('/register',(req, res, next) => {
+    res.render('register');
 });
 
-app.post('/register-c', conferencePost.postFunction);
-
-app.post('/register-w', workshopPost.postFunction);
-
-app.get('/submitted',(req, res, next) => {
-    res.render('submitted');
-    
-    });
-
-app.use('/gallery',(req, res, next) => {
-    res.render('gallery');
+app.post('/register',(req, res, next) => {
+    const post = new Post({
+        FirstName: req.body.FirstName,
+        LastName: req.body.LastName,
+        Email: req.body.Email,
+        Phone: req.body.Phone,
+        School: req.body.School,
+        Department: req.body.Department,
+        Level: req.body.Level
+      });
+      post.save();
+    res.render('events');
 });
+
+
 
 app.use('/about',(req, res, next) => {
     res.render('about');
 });
 
-app.use('/partners',(req, res, next) => {
-    res.render('partners');
-});
+
 
 app.use('/',(req, res, next) => {
-    res.render('home');
+    res.redirect('/home');
     
 });
 
-mongoConnect(client => {
-console.log(client)
-app.listen(port);});
+
+
+app.listen(port);
 
 
