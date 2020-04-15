@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose')
 const Post = require('./post-controller/conference-controller')
-mongoose.connect('mongodb+srv://Theulsis:TheTIS123.@colloquium-data-qe7ip.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://Theulsis:'+process.env.PASSKEY+'@colloquium-data-qe7ip.mongodb.net/test?retryWrites=true&w=majority')
 .then(()=>{
   console.log('e don connect !')
 })
