@@ -1,5 +1,4 @@
 const http = require('http');
-const chalk = require('chalk');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -9,7 +8,7 @@ const Post = require('./post-controller/conference-controller')
 const Applicant = require('./post-controller/registeration-controller')
 mongoose.connect('mongodb+srv://Theulsis:'+process.env.PASSKEY+'@colloquium-data-qe7ip.mongodb.net/test?retryWrites=true&w=majority')
 .then(()=>{
-  console.log(chalk.green('Connected to DB 1'))
+  console.log('Connected to DB 1')
 })
 .catch((err)=>{
   console.log(err)
@@ -17,7 +16,7 @@ mongoose.connect('mongodb+srv://Theulsis:'+process.env.PASSKEY+'@colloquium-data
 
 mongoose.connect('mongodb+srv://chani:'+process.env.PASSKEY+'@cluster0-6j3ia.mongodb.net/<dbname>?retryWrites=true&w=majority')
 .then(()=>{
-  console.log(chalk.green('Connected to DB 2'))
+  console.log('Connected to DB 2')
 })
 .catch((err)=>{
   console.log(err)
