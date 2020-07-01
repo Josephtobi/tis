@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "save": "git add .",
+    "deploy": "git push heroku master"
   },
   "repository": {
     "type": "git",
@@ -22,11 +24,13 @@
   "homepage": "https://github.com/chani24/Expedition-VII#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "heroku": "^7.37.0",
     "mongodb": "^3.5.2",
-    "mongoose": "^5.9.7"
+    "mongoose": "^5.9.19"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

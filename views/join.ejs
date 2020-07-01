@@ -7,7 +7,7 @@
     <meta name="description" content="Events at The Investment Society, Unilag.">
     <meta name="TIS, UNILAG, ULSIS, Investment, Investment Society, Colloquium, Colloquium 2020">
     <meta name="author" content="Ani Chidera">
-    <title>Colloquium registration- The Investment Society</title>
+    <title>Join - The Investment Society</title>
     <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661278/favicon_iul6xm.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -86,7 +86,7 @@
             <li class=""><a class="nav-link" href="/about">About us</a></li>
             <li class=""><a class="nav-link" href="/team">Team</a></li>
             <li class=""><a class="nav-link" href="/events">Events</a></li>
-            <li class=""><a class="nav-link" href="/join">Join</a></li>
+            <li class=""><a class="nav-link" href="/register">Colloquium</a></li>
             <li class=""><a class="nav-link" href="/gallery">gallery</a></li>
            </ul>
 
@@ -100,7 +100,7 @@
               <a class="dropdown-item" href="/about">About us</a>
               <a class="dropdown-item" href="/team">Team</a>
               <a class="dropdown-item" href="/events">Events</a>
-              <a class="dropdown-item" href="/join">Join</a>
+              <a class="dropdown-item" href="/register">Colloquium</a>
               <a class="dropdown-item" href="/gallery">gallery</a>
             </div>
           </div>
@@ -114,18 +114,17 @@
           <div class="container main">
             <div class="heading">
               
-              <span><h3>The</h3></span>
-              <span><h1>Colloquium</h1></span>
-              <span><h2>2020</h2></span>
-              <br>
-              <span><h5>Register</h5></span>
+              <span><h3>Become a part of</h3></span>
+              <span><h1>The Investment Society</h1></span>
+              <span><h2>Unilag</h2></span>
+            
             </div>
 
             
             <div class="form-div container">
-              <form action="/register" method="POST" >
+              <form action="/join" method="POST" >
 
-                <h3 class="heading1">The Colloquium 2020, Register</h3>
+                <h3 class="heading1">The Investment Society, Join</h3>
                 <div class="row">
                     <div class="form-group col-6">
                         <label for="F-name-c">First Name</label>
@@ -149,21 +148,6 @@
     
                 </div>
                 <div class="row">
-                    <div class="form-group col-6">
-                        <label for="inputSchool">School</label>
-                        <select name="School" id="inputSchool" class="form-control">
-                          <option value="University of Lagos">University of Lagos</option>
-                          <option value="University of Ibadan">University of Ibadan</option>
-                          <option value="Convenant University">Convenant University</option>
-                          <option value="Babcock University">Babcock University</option>
-                          <option value="Pan-Atlantic University">Pan-Atlantic University</option>
-                          <option value="Obafemi Awolowo University">Obafemi Awolowo University</option>
-                          <option value="Lagos state University">Lagos state University</option>
-                          <option value="Federal College of Education">Federal College of Education</option>
-                          <option value="Caleb University">Caleb University</option>
-                          <option value="other..." >other...</option>
-                        </select>
-                      </div>
     
                       <div class="form-group col-4">
                         <label for="inputDept">Department</label>
@@ -190,10 +174,32 @@
                           <option value="400">400</option>
                         </select>
                       </div>
+
+                      <div class="form-group col-6">
+                        <label for="inputSkills">Skills</label>
+                        <select name="Skills" id="inputSkills" class="form-control" multiple>
+                          <option value="Presentation skills">Presentation skills</option>
+                          <option value="proficiency in financial analysis and valuation">Financial analysis and valuation</option>
+                          <option value="Power Point">Power Point</option>
+                          <option value="Graphics Design">Graphics Design</option>
+                          <option value="Excel">Excel</option>
+                          <option value="Photography">Photography</option>
+                          <option value="Videography">Videography</option>
+                          <option value="Web Design">Web Design</option>
+                        </select>
+                      </div>
                     
                 </div>
+                <div clss="form-group">
+                <label>What is your top internship experience so far ?*</label>
+                <textarea name="Internship" id="" cols="50" rows="5"></textarea>
+                </div>
+                <div>
+                  <label>What is your top competition experience so far ?*</label>
+                  <textarea name="Competition" id="" cols="50" rows="5"></textarea>
+                </div>
                 <div class="btn-container">
-                    <button type="submit" class="btn" style="background-color: #4f108aaf;">Register</button>
+                    <button type="submit" class="btn" style="background-color: #4f108aaf;">Submit</button>
                 </div>
             </form>
             </div>
