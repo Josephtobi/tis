@@ -20,6 +20,8 @@
     <style>
       body{
         text-align: center;
+        
+        font-family: 'Montserrat', sans-serif;
       }
       .mobile{
         display: none;
@@ -31,6 +33,27 @@
        font-stretch: expanded;
        font-size: 5rem;
      } 
+     .ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 1.2em;
+  color: #494747;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
     
 
     
@@ -245,7 +268,12 @@
           
           <br>
           <div class="container">
-            <p class="w">The fastest growing financial enthusiastic community in the University of Lagos, bridging the gap between theory and practice of finance.</p>
+            
+            <h1 class="ml9">
+              <span class="text-wrapper">
+                <span class="letters">The fastest growing financial enthusiastic community in the University of Lagos, bridging the gap between theory and practice of finance.</span>
+              </span>
+            </h1>
            </div>
           <hr class="style14">
           <div class="container row icons1">
@@ -258,7 +286,7 @@
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="3000">
-                  <img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/c_scale,h_750,w_650/v1593954314/jobs_sqdten.jpg" class="d-block w-100" alt="...">
+                  <img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/c_scale,h_700,w_650/v1593954314/jobs_sqdten.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-md-block">
                     <h3><q>Innovation distinguishes between a leader and a follower.</q></h3>
                     <p>Steve Jobs</p>
@@ -266,14 +294,14 @@
                   
               </div>
               <div class="carousel-item" data-interval="10000">
-                <img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/c_scale,h_750,w_650/v1593889651/bezos_on9fio.jpg" class="d-block w-100" alt="...">
+                <img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/c_scale,h_700,w_650/v1593889651/bezos_on9fio.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-md-block">
                   <h3><q> The keys to success are patience, persistence, and obsessive attention to detail.</q></h3>
                   <p>Jeff Bezos</p>
                 </div>
               </div>
               <div class="carousel-item" data-interval="10000">
-                <img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/c_scale,h_750,w_650/v1593954314/mark_lytqoa.jpg" class="d-block w-100" alt="...">
+                <img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/c_scale,h_700,w_650/v1593954314/mark_lytqoa.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-md-block">
                   <h3><q>Unless you are breaking stuff, you are not moving fast enough.</q></h3>
                   <p>Mark Zuckerberg</p>
@@ -304,7 +332,27 @@
       
       
       
-  <script src="nav.js"></script>   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>   
+      <script>
+        // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+      </script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
