@@ -1,7 +1,7 @@
 {
   "name": "expedition-vii",
   "version": "1.0.0",
-  "description": "Official website for the expedition conference",
+  "description": "Official website for the Investment Society",
   "main": "app.js",
   "engines": {
     "node": "^12.13.1"
