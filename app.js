@@ -72,6 +72,7 @@ app.post('/register',(req, res, next) => {
       });
       post.save()
       .then(response => {
+        res.render('events');
              // using Twilio SendGrid's v3 Node.js Library
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.MAILER);
@@ -85,7 +86,7 @@ const msg = {
 sgMail.send(msg)
 .then((response =>{
   console.log(response)
- return res.render('events');
+ 
 })
 )
 .catch(err => console.log(err));
@@ -111,6 +112,7 @@ app.post('/join',(req, res, next) => {
       console.log(applicant)
       applicant.save()
       .then(()=>{
+        res.render('about');
              // using Twilio SendGrid's v3 Node.js Library
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.MAILER);
@@ -124,7 +126,7 @@ const msg = {
 sgMail.send(msg)
 .then((response =>{
   console.log(response)
- return res.render('about');
+ 
 })
 )
 .catch(err => console.log(err));
