@@ -59,6 +59,7 @@ app.get('/gallery',(req, res, next) => {
   res.render('gallery');
 });
 
+//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
 app.post('/register',(req, res, next) => {
     const post = new Post({
         FirstName: req.body.FirstName,
@@ -69,8 +70,30 @@ app.post('/register',(req, res, next) => {
         Department: req.body.Department,
         Level: req.body.Level
       });
-      post.save();
-    res.render('events');
+      post.save()
+      .then(response => {
+             // using Twilio SendGrid's v3 Node.js Library
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.MAILER);
+const msg = {
+  to: req.body.Email,
+  from: 'ulsisinfo@gmail.com',
+  subject: 'Colloquium registeration',
+  text: 'Your application for The Colloquium 2020 was successful, you will recieve further information from us concerning attendance',
+  html: '<strong>Your application for The Colloquium 2020 was successful, you will recieve further information from us concerning attendance</strong> ',
+};
+sgMail.send(msg)
+.then((response =>{
+  console.log(response)
+ return res.render('events');
+})
+)
+.catch(err => console.log(err));
+      })
+      .catch(err => console.log(error));
+ 
+
+    
 });
 
 app.post('/join',(req, res, next) => {
@@ -88,10 +111,26 @@ app.post('/join',(req, res, next) => {
       console.log(applicant)
       applicant.save()
       .then(()=>{
-        console.log(chalk.blueBright('Saved  new applicant !, ID: '+ applicant._id))
+             // using Twilio SendGrid's v3 Node.js Library
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.MAILER);
+const msg = {
+  to: req.body.Email,
+  from: 'ulsisinfo@gmail.com',
+  subject: 'TIS Application',
+  text: 'We have recieved your application. It will be reviewed and your status communicated to you. Thank you for your interest in The Investment Society.',
+  html: '<strong>We have recieved your application. It will be reviewed and your status communicated to you. Thank you for your interest in The Investment Society.</strong> ',
+};
+sgMail.send(msg)
+.then((response =>{
+  console.log(response)
+ return res.render('about');
+})
+)
+.catch(err => console.log(err));
       })
       .catch()
-    res.render('about');
+    
 });
 
 
