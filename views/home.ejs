@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="/main.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
 
   <body>
     <style>
@@ -71,6 +72,12 @@
       color: black;
       border-radius: 5px;
      font-family: 'Quicksand', sans-serif;
+    }
+
+    .w-bold{
+      font-weight: 900;
+      font-size: 1rem;
+      color: rgb(160, 17, 70);
     }
     
    
@@ -283,19 +290,47 @@
             
             <h1 class="ml9">
               <span class="text-wrapper">
-                <span class="letters">The fastest growing financial enthusiastic community in the University of Lagos, bridging the gap between theory and practice of finance.</span>
+                <span class="letters text-animation">The fastest growing financial enthusiastic community in the University of Lagos, bridging the gap between theory and practice of finance.</span>
               </span>
             </h1>
            </div>
           <hr class="style14">
           <div class="container row icons1">
-            <div class="col-sm-3 icon-div"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1593898483/line-512_yvssj7.png" alt="line"><br><span class="w">Investment Banking</span><hr class="style14 mobile"></div>
-            <div class="col-sm-3 icon-div" ><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1593898483/coins-512_uaoxaq.png" alt="coins"><br><span class="w">Securities</span><hr class="style14 mobile"></div>
-            <div class="col-sm-3 icon-div"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1593898482/briefcase-6-512_rhp3fv.png" alt="briefcase"><br><span class="w">Consulting</span><hr class="style14 mobile"></div>
-            <div class="col-sm-3 icon-div"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1593898483/idea-512_rvjmrh.png" alt="illumination"><br><span  class="w">Alternative Investment</span></div>
+            <div class="col-sm-3 icon-div" data-aos="fade-up"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1593898483/line-512_yvssj7.png" alt="line">
+              <br>
+              <span class="w w-bold">Investment Banking</span>
+              <br>
+              <span class="container">The investment banking division of TIS has the responsibility of
+                mirroring actual investment banking activities through Mergers
+                and Acquisitions and capital raising simulations.</span>
+              <hr class="style14 mobile"></div>
+            <div class="col-sm-3 icon-div" data-aos="fade-up"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1593898483/coins-512_uaoxaq.png" alt="coins">
+              <br>
+              <span class="w w-bold">Securities</span>
+              <br>
+              <span class="container">The securities division is responsible for researching, investing
+                and trading different asset classes including Equities, Fixed
+                Income, Currencies and Commodities on behalf of the society.</span>
+              <hr class="style14 mobile"></div>
+            <div class="col-sm-3 icon-div" data-aos="fade-up"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1593898482/briefcase-6-512_rhp3fv.png" alt="briefcase">
+              <br>
+              <span class="w w-bold">Consulting</span>
+              <br>
+              <span class="container">The management consulting division is poised with the
+                responsibility of mirroring real life case situations and proffer solutions
+                accordingly.</span>
+              <hr class="style14 mobile"></div>
+            <div class="col-sm-3 icon-div" data-aos="fade-up"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1593898483/idea-512_rvjmrh.png" alt="illumination">
+              <br>
+              <span  class="w w-bold">Alternative Investment</span>
+            <br>
+            <span class="container">This divisions is responsible for researching and discussing viable and alternative
+              ways of investing.</span>
+          </div>
+              
           </div>
           <br>
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-aos="fade-up">
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="3000">
                   <img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/c_scale,h_700,w_650/v1593954314/jobs_sqdten.jpg" class="d-block w-100" alt="...">
@@ -368,5 +403,9 @@ anime.timeline({loop: true})
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
