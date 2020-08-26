@@ -35,14 +35,13 @@
     .div{
       height: auto;
       width: 100%;
-      background-image: linear-gradient(to bottom right, rgb(160, 17, 70), #4614a0);
+      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1598365644/Background_header_ykzygz.png');
       padding: 10px;
       
     }
 
     
     .icons1, .icons2{
-  font-size: 10px;
   width: 100%;
   height: auto;
   text-align: center;
@@ -59,14 +58,12 @@
   border-radius: 3px;
 }
 
-    hr.style14 { 
-  border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #ffffff, #8c8b8b, #ffffff);
-  background-image: -moz-linear-gradient(left, #ffffff, #8c8b8b, #ffffff);
-  background-image: -ms-linear-gradient(left, #ffffff, #8c8b8b, #ffffff);
-  background-image: -o-linear-gradient(left, #ffffff, #8c8b8b, #ffffff); 
+.row{
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
 }
+
 
 .carousel-item{
   height: 350px;
@@ -109,6 +106,11 @@ h1, h2, h3{
   
 }
 
+.row {
+     margin-right: 0;
+     margin-left: 0; 
+}
+
 h1{
       
       font-size: 2.5em;
@@ -127,11 +129,11 @@ h1{
           </div> 
           <ul class="nav nav-links">
             <li class=""><a class="nav-link" href="/home">Home</a></li>
-            <li class=""><a class="nav-link" href="/about">About us</a></li>
+            <li class=""><a class="nav-link" href="/about">About</a></li>
             <li class=""><a class="nav-link" href="/team">Team</a></li>
             <li class=""><a class="nav-link active" href="/events">Events</a></li>
-            <li class=""><a class="nav-link" href="/join">Join</a></li>
             <li class=""><a class="nav-link" href="/gallery">Gallery</a></li>
+            <li class=""><a class="nav-link" id="join-link" href="/join">Join Us </a></li>
            </ul>
 
            <div class="dropdown">
@@ -141,11 +143,11 @@ h1{
           
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="/home">Home</a>
-              <a class="dropdown-item" href="about">About us</a>
+              <a class="dropdown-item" href="about">About</a>
               <a class="dropdown-item" href="/team">Team</a>
               <a class="dropdown-item actives" href="/events">Events</a>
-              <a class="dropdown-item" href="/join">Join</a>
               <a class="dropdown-item" href="/gallery">Gallery</a>
+              <a class="dropdown-item" id="join-link" href="/join">Join Us</a>
             </div>
           </div>
         </nav>
@@ -158,20 +160,24 @@ h1{
           <div class="container"><h1>The Colloquium 2020</h1></div>
           <div class="container"><span>Organised by The Investment Society, register<a href="/register"> here.</a></span></div>
         </div>
-         <br>
-        <div class="second-div container">
-          <div class="div"><h3>Past Events</h3></div>
+         
+        <div class="second-div">
           
-          <hr class="style14">
+          <div class="div">
+            <br><h3>Past Events</h3>
+            <br></div>
+          
+          <br>
 
           <div class="container row icons1">
             <div class="col-md-6"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661266/colloquium_tfc52b.jpg" alt="briefcase"><p>The Colloquium</p></div>
             <div class="col-md-6"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661281/fin1_u7puot.jpg" alt="coins"><p>Financial Literacy Day 2019</p></div>
           </div>
 
-          <div class="div"><h3>Activities</h3></div>
-          
-          <hr class="style14">
+          <div class="div">
+            <br><h3>Activities</h3>
+            <br></div>
+          <br>
 
           <div class="container row icons2">
             <div class="col-md-4"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661262/cfa1_bg1pln.jpg" alt="illumination"><p>CFA Research Challenge 2020</p></div>
@@ -191,18 +197,21 @@ h1{
         </div>
 
 
-
-          <!--page footer-->
-          <footer>
-            <nav class="page-footer navbar">
-              <a class="navbar-brand" href="https://www.instagram.com/tisunilag/?hl=en"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661281/instagram-16_ispxmg.png" alt="" srcset=""></a>
-              <a class="navbar-brand" href="mailto:ulsisinfo@mail.com"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661282/mail-11_k0jjg1.png" alt="" srcset=""></a>
-              <a class="navbar-brand" href="https://www.linkedin.com/company/tisunilag"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661282/linkedin-3-16_cvycew.png" alt="" srcset=""></a>
-            </nav>
-          </footer>
-          <footer>
-            <nav class="page-footer" style="color: #494747; font-size: 10px;">&copy; Copyright 2020 The Investment Society</nav>
-          </footer>
+        <br>
+        <br>
+        <footer class="newsletter page-footer">
+          <br><br>
+          <form action="/action_page.php">
+            <h6>Subscribe to our Newsletter</h6>
+            <div class="form-group container">
+              <input type="email" class="form-control input-subscribe" placeholder="Email Address" id="email">
+              <br>
+              <button type="submit" class="btn btn-primary btn-subscribe">Subscribe</button>
+            </div>
+            
+            <br><br>
+          </form>
+        </footer>
           
           
       </div>

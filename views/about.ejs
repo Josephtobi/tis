@@ -7,7 +7,7 @@
     <meta name="description" content="About The Investment Society, Unilag.">
     <meta name="TIS, UNILAG, ULSIS, Investment, Investment Society">
     <meta name="author" content="Ani Chidera">
-    <title>About Us - The Investment Society</title>
+    <title>About - The Investment Society</title>
     <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661278/favicon_iul6xm.png">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -17,44 +17,45 @@
 
   <body>
     <style>
+      *{
+        list-style: none;
+      }
       body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-    font-family: 'Quicksand', sans-serif;
-    }
-    .container{
-      color: #707070;
+    color: #6C7884;
+    text-align: start;
     }
     
 
-    #mission-div{
-      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661298/mission_suzzff.png');
-      height: 200px;
-      background-size: cover;
-    }
-
-    #vision-div{
-      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661311/vision_jyysku.png');
-      background-size: cover;
-      height: 200px;
-      
-    }
     
-    hr{
-      border-top: 1px solid rgb(143, 142, 142);
+    .about-div{
+      margin: 0;
+      width: 100vw;
+      margin-top: 6rem;
     }
+    .about-sub-div-1{
+      padding: 3rem;
+    }
+    .about-sub-div-2{
+      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661273/DSC_0499_y7zkej.jpg');
+      height: 30rem;
+      background-size: cover;
+}
+    
     h1, h2{
       color: white;
       font-weight: 300;
+      text-align: center;
     }
     
     .wine{
       font-weight: 600;
-      color: rgb(160, 17, 70);
+      color: #AB324F;
     }
     h3, h6{
-      color: #494747;
+      color: #333D47;
     }
     .h9{
       font-size: 20px;
@@ -65,7 +66,7 @@
     .div{
       height: auto;
       width: 100%;
-      background-image: linear-gradient(to bottom right, rgb(160, 17, 70), #4614a0);
+      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1598365644/Background_header_ykzygz.png');
       padding: 10px;
       
     }
@@ -81,13 +82,26 @@
      
 
     h1{
-      font-size: 22px;
+      font-size: 25px;
     }
     .h9{
       font-size: 15px;
     }
     h2{
       font-size: 20px;
+    }
+
+    .about-div{
+      margin: 0;
+      width: 100vw;
+      flex-direction: column-reverse;
+    }
+    .about-sub-div-1{
+      padding: 1rem;
+    }
+    .about-sub-div-2{
+      
+      height: 20rem;
     }
 
     .div{
@@ -111,11 +125,11 @@
             </div> 
             <ul class="nav nav-links">
               <li class=""><a class="nav-link" href="/home">Home</a></li>
-              <li class=""><a class="nav-link active" href="/about">About us</a></li>
+              <li class=""><a class="nav-link active" href="/about">About</a></li>
               <li class=""><a class="nav-link" href="/team">Team</a></li>
               <li class=""><a class="nav-link" href="/events">Events</a></li>
-              <li class=""><a class="nav-link" href="/join">Join</a></li>
               <li class=""><a class="nav-link" href="/gallery">Gallery</a></li>
+              <li class=""><a class="nav-link" id="join-link" href="/join">Join Us </a></li>
              </ul>
 
              <div class="dropdown">
@@ -125,11 +139,11 @@
             
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="/home">Home</a>
-                <a class="dropdown-item actives" href="/about">About us</a>
+                <a class="dropdown-item actives" href="/about">About</a>
                 <a class="dropdown-item" href="/team">Team</a>
                 <a class="dropdown-item" href="/events">Events</a>
-                <a class="dropdown-item" href="/join">Join</a>
                 <a class="dropdown-item" href="/gallery">Gallery</a>
+                <a class="dropdown-item" id="join-link" href="/join">Join Us</a>
               </div>
             </div>
           </nav>
@@ -138,50 +152,41 @@
 
           
         
-          <div class="container">
-            
-            <br>
+          <div>
             <div class="div div1" >
-              <h1><span class="h9">About</span> The Investment Society.</h1>
+              <br><br>
+              <h1>About the Investment Society</h1>
+              <br><br>
             </div>
             
-            <hr>
+            
+            <div class="about-div row">
+              <div class="col-sm-6 about-sub-div-1">
+                <br>
+                <h6><span class="wine">About TIS</span></h6>
+                <p>We are a multi-disciplinary and academically diverse
+                society founded in 2016 by a group of University of Lagos students keen on
+                sharing and expanding their knowledge of investment, finance and
+                consulting.</p>
+    
+                <p>First of its kind in any Nigerian University, we aim to teach, educate, groom
+                  and prepare members for elite careers in finance, investment and consulting.
+                  As a society that thrives on knowledge; we also aim to provide our members with
+                  the strong foundation necessary to lunch a successful career - whilst also
+                  working hard to achieve excellent academic grades.</p>
+    
+                <p>We aim to bridge the gap between the industry and aspiring investment,
+                finance and consulting professionals through sponsor-led workshops,
+                intensive training programs, stock pitches, business case competitions,
+                networking sessions, and on-campus recruiting events.
+                </p>
+              </div>
+              <div class="col-sm-6 about-sub-div-2"></div>
+            </div>
 
-            <p>
-              
-              <span class="wine">We</span> are a multi-disciplinary and academically diverse
-            society founded in 2016 by a group of University of Lagos students keen on
-            sharing and expanding their knowledge of investment, finance and
-            consulting.</p>
-
-            <p>First of its kind in any Nigerian University, we aim to teach, educate, groom
-              and prepare members for elite careers in finance, investment and consulting.
-              As a society that thrives on knowledge; we also aim to provide our members with
-              the strong foundation necessary to lunch a successful career - whilst also
-              working hard to achieve excellent academic grades.</p>
-
-            <p>We aim to bridge the gap between the industry and aspiring investment,
-            finance and consulting professionals through sponsor-led workshops,
-            intensive training programs, stock pitches, business case competitions,
-            networking sessions, and on-campus recruiting events.
-            </p>
-            <p>
-              <div class="div" id="mission-div"  data-aos="fade-up"></div>
-             
-             To bridge the gap between theory and practice for members who hope to pursue
-             careers in the investment banking, asset management and consulting.
-            </p>
-            <p>
-              <div class="div" id="vision-div"></div>
-             
-              To raise identify and train the next generation of Financial decision makers
-              and Consultants. We aim to achieve this vision by training, re-training and
-              our members on the noble profession of Finance whilst achieving superb
-              academic grades.
-            </p>
-              
-            <div class="div div2">
-              <h2>OUR OPERATIONS</h2>
+              <br><br><br>
+            <div>
+              <h2><span class="wine">Our Operations</span></h2>
             </div>
             <p> 
               
@@ -252,8 +257,9 @@
               </ul>
 
               </p>
-              <div class="div div3">
-                <h2>CORE DIVISIONS</h2>
+              
+              <div>
+                <h2><span class="wine">Core Divisions</span></h2>
               </div>
               <p>
                 
@@ -281,8 +287,9 @@
                     ways of investing.</li><br>
                 </ul>
 
-                <div class="div div4">
-                  <h2>BACK-OFFICE DIVISIONS</h2>
+                
+                <div>
+                  <h2><span class="wine">Back-Office Divisions</span></h2>
                 </div>
                 <br>
                   <ul class="container">
@@ -310,19 +317,22 @@
               </p>
               
             </div>
-          <br><br>
-
-          <!--page footer-->
-          <footer>
-            <nav class="page-footer navbar">
-              <a class="navbar-brand" href="https://www.instagram.com/tisunilag/?hl=en"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661281/instagram-16_ispxmg.png" alt="" srcset=""></a>
-              <a class="navbar-brand" href="mailto:ulsisinfo@mail.com"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661282/mail-11_k0jjg1.png" alt="" srcset=""></a>
-              <a class="navbar-brand" href="https://www.linkedin.com/company/tisunilag"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661282/linkedin-3-16_cvycew.png" alt="" srcset=""></a>
-            </nav>
-          </footer>
-          <footer>
-            <nav class="page-footer" style="color: #494747; font-size: 13px;">&copy; Copyright 2020 The Investment Society</nav>
-          </footer>
+            <br>
+            <br>
+            <br>
+            <footer class="newsletter page-footer">
+              <br><br>
+              <form action="/action_page.php">
+                <h6>Subscribe to our Newsletter</h6>
+                <div class="form-group container">
+                  <input type="email" class="form-control input-subscribe" placeholder="Email Address" id="email">
+                  <br>
+                  <button type="submit" class="btn btn-primary btn-subscribe">Subscribe</button>
+                </div>
+                
+                <br><br>
+              </form>
+            </footer>
           
       </div>
       

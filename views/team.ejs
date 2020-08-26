@@ -21,35 +21,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-    font-family: 'Quicksand', sans-serif;
     }
-    .container{
-      color: #707070;
-    }
-    
-
-    #mission-div{
-      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661298/mission_suzzff.png');
-      height: 200px;
-    }
-
-    #vision-div{
-      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661311/vision_jyysku.png');
-      height: 200px;
-    }
-    
-    hr{
-      border-top: 1px solid rgb(143, 142, 142);
-    }
+  
     h1, h2{
       color: white;
       font-weight: 300;
     }
-    
-    .wine{
-      font-weight: 600;
-      color: rgb(160, 17, 70);
-    }
+  
     h3, h6{
       color: #494747;
     }
@@ -62,14 +40,18 @@
     .div{
       height: auto;
       width: 100%;
-      background-image: linear-gradient(to bottom right, rgb(160, 17, 70), #4614a0);
+      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1598365644/Background_header_ykzygz.png');
       padding: 10px;
       
     }
-
-    .register-link{
-      color: rgb(160, 17, 70);
+    .card-deck{
+      width: 80%;
+      margin: auto;
     }
+
+    
+
+
 
     
     @media screen and (max-width:768px){
@@ -108,11 +90,11 @@
             </div> 
             <ul class="nav nav-links">
               <li class=""><a class="nav-link" href="/home">Home</a></li>
-              <li class=""><a class="nav-link" href="/about">About us</a></li>
+              <li class=""><a class="nav-link" href="/about">About</a></li>
               <li class=""><a class="nav-link active" href="/team">Team</a></li>
               <li class=""><a class="nav-link" href="/events">Events</a></li>
-              <li class=""><a class="nav-link" href="/join">Join</a></li>
               <li class=""><a class="nav-link" href="/gallery">Gallery</a></li>
+              <li class=""><a class="nav-link" id="join-link" href="/join">Join Us </a></li>
              </ul>
 
              <div class="dropdown">
@@ -122,21 +104,23 @@
             
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="/home">Home</a>
-                <a class="dropdown-item" href="/about">About us</a>
+                <a class="dropdown-item" href="/about">About</a>
                 <a class="dropdown-item actives" href="/team">Team</a>
                 <a class="dropdown-item" href="/events">Events</a>
-                <a class="dropdown-item" href="/join">Join</a>
                 <a class="dropdown-item" href="/gallery">Gallery</a>
+                <a class="dropdown-item" id="join-link" href="/join">Join Us</a>
               </div>
             </div>
           </nav>
         
         </header>
-        <br>
+        <div class="div div3" style="text-align: center;">
+          <br>
+          <h2>Meet the team</h2>
+          <br>
+        </div>
               <div class="team-div container">
-                <div class="div div3" style="text-align: center;">
-                  <h2>THE TEAM</h2>
-                </div>
+                
                 <br>
                 <div class="row card-deck">
                   <div class="card col-sm-6"  >
@@ -146,7 +130,7 @@
                       <p class="card-text">President</p>
                     </div>
                   </div>
-
+                  <br>
                   <div class="card col-sm-6" >
                     <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661264/Blessing_vvfmer.jpg" alt="Card image">
                     <div class="card-body">
@@ -157,8 +141,7 @@
                 </div>
                 <br>
                 <div class="row card-deck">
-
-                  <div class="card col-sm-4" >
+                  <div class="card col-sm-6" >
                     <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661281/Ezekiel_n1itdw.jpg" alt="Card image">
                     <div class="card-body">
                       <h4 class="card-title">Ezekiel Shojupe</h4>
@@ -166,8 +149,7 @@
                     </div>
                   </div>
                   <br>
-
-                  <div class="card col-sm-4" >
+                  <div class="card col-sm-6" >
                     <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661287/Qaozara_zxuehu.jpg" alt="Card image">
                     <div class="card-body">
                       <h4 class="card-title">Qaozara Adepeju</h4>
@@ -175,14 +157,6 @@
                     </div>
                   </div>
                   <br>
-                  <div class="card col-sm-4" >
-                    <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661293/Tope_jv2pz1.jpg" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">TemiTope Aiyegbusi</h4>
-                      <p class="card-text">Director, Media & Publicity</p>
-                    </div>
-                  </div>
-              
                 </div>
                 <br>
                 <div class="row card-deck">
@@ -194,6 +168,15 @@
                       <p class="card-text">Staff Advisor</p>
                     </div>
                   </div>
+                  <br>
+                  <div class="card col-sm-6" >
+                    <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661293/Tope_jv2pz1.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">TemiTope Aiyegbusi</h4>
+                      <p class="card-text">Director, Media & Publicity</p>
+                    </div>
+                  </div>
+                  <br>
 
                   
                 </div>
@@ -202,19 +185,22 @@
                 
               </div>
             </div>
-          <br><br>
-
-          <!--page footer-->
-          <footer>
-            <nav class="page-footer navbar">
-              <a class="navbar-brand" href="https://www.instagram.com/tisunilag/?hl=en"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661281/instagram-16_ispxmg.png" alt="" srcset=""></a>
-              <a class="navbar-brand" href="mailto:ulsisinfo@mail.com"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661282/mail-11_k0jjg1.png" alt="" srcset=""></a>
-              <a class="navbar-brand" href="https://www.linkedin.com/company/tisunilag"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661282/linkedin-3-16_cvycew.png" alt="" srcset=""></a>
-            </nav>
-          </footer>
-          <footer>
-            <nav class="page-footer" style="color: #494747; font-size: 13px;">&copy; Copyright 2020 The Investment Society</nav>
-          </footer>
+            <br><br>
+            <br>
+            <br>
+            <footer class="newsletter page-footer">
+              <br><br>
+              <form action="/action_page.php">
+                <h6>Subscribe to our Newsletter</h6>
+                <div class="form-group container">
+                  <input type="email" class="form-control input-subscribe" placeholder="Email Address" id="email">
+                  <br>
+                  <button type="submit" class="btn btn-primary btn-subscribe">Subscribe</button>
+                </div>
+                
+                <br><br>
+              </form>
+            </footer>
           
       </div>
       
