@@ -7,7 +7,7 @@
     <meta name="description" content="Events at The Investment Society, Unilag.">
     <meta name="TIS, UNILAG, ULSIS, Investment, Investment Society, Colloquium, Colloquium 2020">
     <meta name="author" content="Ani Chidera">
-    <title>Colloquium registration- The Investment Society</title>
+    <title>Colloquium - The Investment Society</title>
     <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661278/favicon_iul6xm.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -18,48 +18,60 @@
   <body>
     <style>
       body{
-        background-image: linear-gradient(to bottom right, rgb(145, 16, 63), #571397);
-        font-family: 'Montserrat', sans-serif;
+        text-align: start;
     }
     .main{
       width: 100%;
       height: auto;
-      display: flex;
+      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1598365644/Background_header_ykzygz.png');
+      background-repeat: no-repeat;
     }
-
+    textarea{
+      box-sizing:border-box;
+      height: 100px;
+      width: 100%;
+    }
+    label, p {
+    font-weight: 900;
+}   
+    p{
+      font-size: .9rem;
+      color: #AB324F;
+    }
+    .join-header{
+      text-align: center;
+      color: white;
+      font-weight: 900;
+    }
     .form-div{
       background-color: rgb(255, 255, 255);
       width: 50%;
       height: auto;
-      border-radius: 2px;
-      box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2); 
+      box-shadow: 0px 0px 7px .2px rgba(0,0,0,0.2); 
       font-size: 0.78rem;
       font-weight: 300;
-      padding-top: 10px;
+      padding: 30px 150px;
     }
-    .heading{
-      width: 50%;
-      height: 100% !important;
-      display: flex;
-      flex-direction: column;
-      align-content: space-around;
+    
+    button{
+      width: 100%;
+      border-radius: 0!important;
+      background-color: #AB324F!important;
     }
-    .heading h1{
-      font-weight: 900;
-    }
-    .heading1{
+
+    .br{
       display: none;
-    }   
+    }
+     
 
     input, select{
-      background-color: rgb(240, 233, 236) !important;
+      background-color: rgb(255, 255, 255) !important;
+      border: black;
     }
 
     @media screen and (max-width:768px){
     .main{
       display: block;
-      flex-direction: row;
-      justify-content: space-around;
     }
     .heading{
       display: none;
@@ -67,11 +79,13 @@
 
     .form-div{
       width: 100%;
+      padding: 10px;
+      box-shadow: none; 
     }
-    .heading1{
-      display: inline-block;
-      font-weight: 650;
-    color: rgb(66, 8, 29);}
+
+    .br{
+      display: block;
+    }
     }
     
     </style>
@@ -88,7 +102,7 @@
             <li class=""><a class="nav-link" href="/team">Team</a></li>
             <li class=""><a class="nav-link" href="/events">Events</a></li>
             <li class=""><a class="nav-link" href="/gallery">Gallery</a></li>
-            <li class=""><a class="nav-link" id="join-link" href="/join">Join Us </a></li>
+            <li class=""><a class="nav-link active" id="join-link" href="/join">Join Us </a></li>
            </ul>
 
            <div class="dropdown">
@@ -102,71 +116,68 @@
               <a class="dropdown-item" href="/team">Team</a>
               <a class="dropdown-item" href="/events">Events</a>
               <a class="dropdown-item" href="/gallery">Gallery</a>
-              <a class="dropdown-item" id="join-link" href="/join">Join Us</a>
+              <a class="dropdown-item actives" id="join-link" href="/join">Join Us</a>
             </div>
           </div>
         </nav>
       
       </header>
-          <br>
-          <br>
           
 
-          <div class="container main">
-            <div class="heading">
-              
-              <span><h3>The</h3></span>
-              <span><h1>Colloquium</h1></span>
-              <span><h2>2020</h2></span>
-              <br>
-              <span><h5>Register</h5></span>
-            </div>
+          <div class="main">
+            <br><br><br>
 
-            
+            <h3 class="join-header">
+              The Colloquium 2020
+            </h3>
+            <br><br class="br">
             <div class="form-div container">
-              <form action="/register" method="POST" >
+              <form action="/join" method="POST" >
 
-                <h3 class="heading1">The Colloquium 2020, Register</h3>
+                <p>Fill this form to Register for the Colloquium</p>
                 <div class="row">
-                    <div class="form-group col-6">
-                        <label for="F-name-c">First Name</label>
-                        <input style="background-color: rgb(252, 175, 203)" name="FirstName" type="text" class="form-control" id="F-name-c" aria-describedby="F-name-c" placeholder="Enter your first name" required>
+                    <div class="form-group col-12">
+                        <label for="F-name-c">Name</label>
+                        <input name="FirstName" type="text" class="form-control" id="F-name-c" aria-describedby="F-name-c" placeholder="First name" required>
                     </div>
     
-                    <div class="form-group col-6">
-                        <label for="L-name-c">Last name </label>
-                        <input name="LastName" type="text" class="form-control" id="L-name-c" aria-describedby="L-name-c" placeholder="Enter your last name" required>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-7">
-                        <label for="Email-c">Email address</label>
-                        <input name="Email" type="email" class="form-control" id="Email-c" aria-describedby="email" placeholder="Enter a valid Email address" required>
+  
+                  <div class="form-group col-12">
+                      <input name="LastName" type="text" class="form-control" id="L-name-c" aria-describedby="L-name-c" placeholder="Last name" required>
+                  </div>
+              </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="Email-c">Email</label>
+                        <input name="Email" type="email" class="form-control" id="Email-c" aria-describedby="email" placeholder="Email address" required>
                     </div>
-                    <div class="form-group col-5">
+                    <div class="form-group col-12">
                         <label for="tel-c">Phone number</label>
-                        <input name="Phone" type="tel" class="form-control" id="tel-c" aria-describedby="tel-c" placeholder="Enter a valid phone number" required>
+                        <input name="Phone" type="tel" class="form-control" id="tel-c" aria-describedby="tel-c" placeholder="phone number" required>
                     </div>
     
                 </div>
                 <div class="row">
-                    <div class="form-group col-6">
-                        <label for="inputSchool">School</label>
-                        <select name="School" id="inputSchool" class="form-control">
-                          <option value="University of Lagos">University of Lagos</option>
-                          <option value="University of Ibadan">University of Ibadan</option>
-                          <option value="Convenant University">Convenant University</option>
-                          <option value="Babcock University">Babcock University</option>
-                          <option value="Pan-Atlantic University">Pan-Atlantic University</option>
-                          <option value="Obafemi Awolowo University">Obafemi Awolowo University</option>
-                          <option value="Lagos state University">Lagos state University</option>
-                          <option value="Federal College of Education">Federal College of Education</option>
-                          <option value="Caleb University">Caleb University</option>
-                          <option value="other..." >other...</option>
-                        </select>
-                      </div>
+
+                    <div class="form-group col-sm-6">
+                      <label for="inputSchool">School</label>
+                      <select name="School" id="inputSchool" class="form-control">
+                        <option value="University of Lagos">University of Lagos</option>
+                        <option value="University of Ibadan">University of Ibadan</option>
+                        <option value="Convenant University">Convenant University</option>
+                        <option value="Babcock University">Babcock University</option>
+                        <option value="Pan-Atlantic University">Pan-Atlantic University</option>
+                        <option value="Obafemi Awolowo University">Obafemi Awolowo University</option>
+                        <option value="Lagos state University">Lagos state University</option>
+                        <option value="Federal College of Education">Federal College of Education</option>
+                        <option value="Caleb University">Caleb University</option>
+                        <option value="other..." >other...</option>
+                      </select>
+                    </div>
     
-                      <div class="form-group col-4">
+                      <div class="form-group col-sm-6">
                         <label for="inputDept">Department</label>
                         <select name="Department" id="inputDept" class="form-control">
                           <option value="Economics">Economics</option>
@@ -182,7 +193,7 @@
                         </select>
                       </div>
     
-                      <div class="form-group col-2">
+                      <div class="form-group col-sm-6">
                         <label for="inputLevel">Level</label>
                         <select name="Level" id="inputLevel" class="form-control">
                           <option value="100">100</option>
@@ -191,8 +202,11 @@
                           <option value="400">400</option>
                         </select>
                       </div>
+
                     
                 </div>
+
+                <br>
                 <div class="btn-container">
                     <button type="submit" class="btn" style="background-color: #4f108aaf;">Register</button>
                 </div>

@@ -23,7 +23,6 @@
     .main{
       width: 100%;
       height: auto;
-      display: flex;
       background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1598365644/Background_header_ykzygz.png');
       background-repeat: no-repeat;
     }
@@ -32,29 +31,49 @@
       height: 100px;
       width: 100%;
     }
-
+    label, p {
+    font-weight: 900;
+}   
+    p{
+      font-size: .9rem;
+      color: #AB324F;
+    }
+    .join-header{
+      text-align: center;
+      color: white;
+      font-weight: 900;
+    }
     .form-div{
       background-color: rgb(255, 255, 255);
       width: 50%;
       height: auto;
-      border-radius: 2px;
-      box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2); 
+      box-shadow: 0px 0px 7px .2px rgba(0,0,0,0.2); 
       font-size: 0.78rem;
       font-weight: 300;
-      padding-top: 10px;
+      padding: 30px 150px;
+    }
+    
+    button{
+      width: 100%;
+      border-radius: 0!important;
+      background-color: #AB324F!important;
+    }
+
+    .br{
+      display: none;
     }
      
 
     input, select{
-      background-color: rgb(240, 233, 236) !important;
+      background-color: rgb(255, 255, 255) !important;
       border: black;
     }
+
+    
 
     @media screen and (max-width:768px){
     .main{
       display: block;
-      flex-direction: row;
-      justify-content: space-around;
     }
     .heading{
       display: none;
@@ -62,11 +81,13 @@
 
     .form-div{
       width: 100%;
+      padding: 10px;
+      box-shadow: none;
     }
-    .heading1{
-      display: inline-block;
-      font-weight: 650;
-    color: rgb(66, 8, 29);}
+
+    .br{
+      display: block;
+    }
     }
     
     </style>
@@ -105,22 +126,24 @@
         </nav>
       
       </header>
-          <br>
-          <br>
           
 
           <div class="main">
+            <br><br><br>
 
-            
+            <h3 class="join-header">
+              Join Us
+            </h3>
+            <br><br class="br">
             <div class="form-div container">
               <form action="/join" method="POST" >
 
-                <h3 class="heading1">Join,</h3>
-                <h3 class="heading1">The Investment Society.</h3>
+                <p>Fill this form to join this fast growing community of 
+                  financial enthusiastic.</p>
                 <div class="row">
                     <div class="form-group col-12">
                         <label for="F-name-c">Name</label>
-                        <inputname="FirstName" type="text" class="form-control" id="F-name-c" aria-describedby="F-name-c" placeholder="First name" required>
+                        <input name="FirstName" type="text" class="form-control" id="F-name-c" aria-describedby="F-name-c" placeholder="First name" required>
                     </div>
     
                 </div>
@@ -131,19 +154,19 @@
                   </div>
               </div>
                 <div class="row">
-                    <div class="form-group col-7">
-                        <label for="Email-c">Email address</label>
-                        <input name="Email" type="email" class="form-control" id="Email-c" aria-describedby="email" placeholder="Enter a valid Email address" required>
+                    <div class="form-group col-12">
+                        <label for="Email-c">Email</label>
+                        <input name="Email" type="email" class="form-control" id="Email-c" aria-describedby="email" placeholder="Email address" required>
                     </div>
-                    <div class="form-group col-5">
+                    <div class="form-group col-12">
                         <label for="tel-c">Phone number</label>
-                        <input name="Phone" type="tel" class="form-control" id="tel-c" aria-describedby="tel-c" placeholder="Enter a valid phone number" required>
+                        <input name="Phone" type="tel" class="form-control" id="tel-c" aria-describedby="tel-c" placeholder="phone number" required>
                     </div>
     
                 </div>
                 <div class="row">
     
-                      <div class="form-group col-4">
+                      <div class="form-group col-sm-6">
                         <label for="inputDept">Department</label>
                         <select name="Department" id="inputDept" class="form-control">
                           <option value="Economics">Economics</option>
@@ -159,7 +182,7 @@
                         </select>
                       </div>
     
-                      <div class="form-group col-2">
+                      <div class="form-group col-sm-6">
                         <label for="inputLevel">Level</label>
                         <select name="Level" id="inputLevel" class="form-control">
                           <option value="100">100</option>
@@ -169,7 +192,7 @@
                         </select>
                       </div>
 
-                      <div class="form-group col-6">
+                      <div class="form-group col-12">
                         <label for="inputSkills">Skills</label>
                         <select name="Skills" id="inputSkills" class="form-control" multiple>
                           <option value="Presentation skills">Presentation skills</option>
@@ -192,6 +215,7 @@
                   <label>What is your top competition experience so far ?*</label>
                   <textarea name="Competition" id="" cols="50" rows="5"></textarea>
                 </div>
+                <br>
                 <div class="btn-container">
                     <button type="submit" class="btn" style="background-color: #4f108aaf;">Submit</button>
                 </div>
