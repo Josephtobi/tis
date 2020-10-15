@@ -132,7 +132,7 @@
             </h3>
             <br><br class="br">
             <div class="form-div container">
-              <form action="/join" method="POST" >
+              <form action="/register" method="POST" >
 
                 <p>Fill this form to Register for the Colloquium</p>
                 <div class="row">
@@ -161,8 +161,67 @@
                 </div>
                 <div class="row">
 
+                  <div class="form-group col-sm-6">
+                    <label for="inputLevel">Gender</label>
+                    <select name="Gender" id="inputLevel" class="form-control">
+                      <option value="Male">Male</option>
+                      <option value="Female">female</option>
+                      <option value="non-indicated">300</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-sm-6">
+                    <label for="inputLevel">Nationality</label>
+                    <select name="Nationality" id="inputLevel" class="form-control">
+                      <option value="Nigeria">Nigerian</option>
+                      <option value="kenya">kenyan</option>
+                      <option value="south africa">South African</option>
+                      <option value="ghana">Ghanaian</option>
+                      <option value="togo">Togolese</option>
+                      <option value="chad">Chadian</option>
+                      <option value="mali">Malian</option>
+                      <option value="america">American</option>
+                      <option value="brit">British</option>
+                      <option value="canada">Canadian</option>
+                      <option value="congo">Congolese</option>
+                      <option value="other">other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-sm-12">
+                    <label for="inputLevel">How did you hear about The Colloquium ?</label>
+                    <select name="Media" id="inputLevel" class="form-control">
+                      <option value="Social media">Social media</option>
+                      <option value="friend">A friend</option>
+                      <option value="email">Email</option>
+                      <option value="web">Website</option>
+                      <option value="referral">Referral</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label>Referral (For referrals)</label>
+                          <textarea name="Referral" id="" cols="50" rows="5" placeholder="Enter fullname"></textarea>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-sm-6">
+                    <label for="inputLevel">Status*</label>
+                    <select name="Status" id="inputLevel" class="form-control">
+                      <option value="100">Student</option>
+                      <option value="200">Recent graduate</option>
+                      <option value="300">Professional</option>
+                    </select>
+                  </div>
+
+
                     <div class="form-group col-sm-6">
-                      <label for="inputSchool">School</label>
+                      <label for="inputSchool">School (Students)</label>
                       <select name="School" id="inputSchool" class="form-control">
                         <option value="University of Lagos">University of Lagos</option>
                         <option value="University of Ibadan">University of Ibadan</option>
@@ -178,7 +237,7 @@
                     </div>
     
                       <div class="form-group col-sm-6">
-                        <label for="inputDept">Department</label>
+                        <label for="inputDept">Department (Students)</label>
                         <select name="Department" id="inputDept" class="form-control">
                           <option value="Economics">Economics</option>
                           <option value="Accounting">Accounting</option>
@@ -194,7 +253,7 @@
                       </div>
     
                       <div class="form-group col-sm-6">
-                        <label for="inputLevel">Level</label>
+                        <label for="inputLevel">Level (Students)</label>
                         <select name="Level" id="inputLevel" class="form-control">
                           <option value="100">100</option>
                           <option value="200">200</option>
@@ -204,6 +263,24 @@
                       </div>
 
                     
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div clss="form-group">
+                      <label>Industry (Recent graduates or professionals)*</label>
+                      <textarea name="Industry" id="" cols="50" rows="5"></textarea>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div clss="form-group">
+                      <label>Expectations of the conference*</label>
+                      <textarea name="Expectation" id="" cols="50" rows="5"></textarea>
+                      </div>
+                  </div>
                 </div>
 
                 <br>

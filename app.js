@@ -66,9 +66,16 @@ app.post('/register',(req, res, next) => {
         LastName: req.body.LastName,
         Email: req.body.Email,
         Phone: req.body.Phone,
+        Gender: req.body.Gender,
+        Nationality: req.body.Nationality,
+        Media: req.body.Media,
+        Referral: req.body.Referral,
+        Status: req.body.Status,
         School: req.body.School,
         Department: req.body.Department,
-        Level: req.body.Level
+        Level: req.body.Level,
+        Industry: req.body.Industry,
+        Expectation: req.body.Expectation,
       });
       post.save()
       .then(response => {
