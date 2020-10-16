@@ -90,6 +90,8 @@
     
     </style>
 
+    
+
       <div class="content">
         <header class="header"><nav>
           <div class="logo-div">
@@ -166,25 +168,14 @@
                     <select name="Gender" id="inputLevel" class="form-control">
                       <option value="Male">Male</option>
                       <option value="Female">female</option>
-                      <option value="non-indicated">300</option>
+                      <option value="non-indicated">Prefer not to say</option>
                     </select>
                   </div>
 
                   <div class="form-group col-sm-6">
                     <label for="inputLevel">Nationality</label>
-                    <select name="Nationality" id="inputLevel" class="form-control">
-                      <option value="Nigeria">Nigerian</option>
-                      <option value="kenya">kenyan</option>
-                      <option value="south africa">South African</option>
-                      <option value="ghana">Ghanaian</option>
-                      <option value="togo">Togolese</option>
-                      <option value="chad">Chadian</option>
-                      <option value="mali">Malian</option>
-                      <option value="america">American</option>
-                      <option value="brit">British</option>
-                      <option value="canada">Canadian</option>
-                      <option value="congo">Congolese</option>
-                      <option value="other">other</option>
+                    <select name="Nationality" id="inputLevel" class="form-control countriesList">
+                    
                     </select>
                   </div>
 
@@ -204,7 +195,7 @@
                       <div class="col-12">
                         <div class="form-group">
                           <label>Referral (For referrals)</label>
-                          <textarea name="Referral" id="" cols="50" rows="5" placeholder="Enter fullname"></textarea>
+                          <textarea name="Referral"  cols="50" rows="5" placeholder="Enter fullname"></textarea>
                           </div>
                       </div>
                     </div>
@@ -213,52 +204,34 @@
                   <div class="form-group col-sm-6">
                     <label for="inputLevel">Status*</label>
                     <select name="Status" id="inputLevel" class="form-control">
-                      <option value="100">Student</option>
-                      <option value="200">Recent graduate</option>
-                      <option value="300">Professional</option>
+                      <option value="Undergraduate">Undergraduate</option>
+                      <option value="graduate">Recent graduate</option>
+                      <option value="professional">Professional</option>
                     </select>
                   </div>
 
 
-                    <div class="form-group col-sm-6">
-                      <label for="inputSchool">School (Students)</label>
-                      <select name="School" id="inputSchool" class="form-control">
-                        <option value="University of Lagos">University of Lagos</option>
-                        <option value="University of Ibadan">University of Ibadan</option>
-                        <option value="Convenant University">Convenant University</option>
-                        <option value="Babcock University">Babcock University</option>
-                        <option value="Pan-Atlantic University">Pan-Atlantic University</option>
-                        <option value="Obafemi Awolowo University">Obafemi Awolowo University</option>
-                        <option value="Lagos state University">Lagos state University</option>
-                        <option value="Federal College of Education">Federal College of Education</option>
-                        <option value="Caleb University">Caleb University</option>
-                        <option value="other..." >other...</option>
-                      </select>
-                    </div>
-    
-                      <div class="form-group col-sm-6">
-                        <label for="inputDept">Department (Students)</label>
-                        <select name="Department" id="inputDept" class="form-control">
-                          <option value="Economics">Economics</option>
-                          <option value="Accounting">Accounting</option>
-                          <option value="Political Science">Political Science</option>
-                          <option value="Sociology">Sociology</option>
-                          <option value="Law">Law</option>
-                          <option value="Mass Communication">Mass Communication</option>
-                          <option value="Creative Arts">Creative Arts</option>
-                          <option value="Theatre Arts">Theatre Arts</option>
-                          <option value="Business Administration">Business Administration</option>
-                          <option value="other">other...</option>
-                        </select>
+                  <div class="col-12">
+                    <div clss="form-group">
+                      <label>School (Undergraduates)*</label>
+                      <textarea name="School"  cols="50" rows="2"></textarea>
                       </div>
+                  </div>
+    
+                  <div class="col-12">
+                    <div clss="form-group">
+                      <label>Department (Undergraduates)*</label>
+                      <textarea name="Department"  cols="50" rows="1"></textarea>
+                      </div>
+                  </div>
     
                       <div class="form-group col-sm-6">
-                        <label for="inputLevel">Level (Students)</label>
+                        <label for="inputLevel">Level (Undergraduates)</label>
                         <select name="Level" id="inputLevel" class="form-control">
-                          <option value="100">100</option>
-                          <option value="200">200</option>
-                          <option value="300">300</option>
-                          <option value="400">400</option>
+                          <option value="100">1st year</option>
+                          <option value="200">2nd year</option>
+                          <option value="300">3rd year</option>
+                          <option value="400+">4th year and above</option>
                         </select>
                       </div>
 
@@ -269,7 +242,7 @@
                   <div class="col-12">
                     <div clss="form-group">
                       <label>Industry (Recent graduates or professionals)*</label>
-                      <textarea name="Industry" id="" cols="50" rows="5"></textarea>
+                      <textarea name="Industry"  cols="50" rows="5"></textarea>
                       </div>
                   </div>
                 </div>
@@ -278,7 +251,7 @@
                   <div class="col-12">
                     <div clss="form-group">
                       <label>Expectations of the conference*</label>
-                      <textarea name="Expectation" id="" cols="50" rows="5"></textarea>
+                      <textarea name="Expectation"  cols="50" rows="3"></textarea>
                       </div>
                   </div>
                 </div>
@@ -312,10 +285,49 @@
 
       
       
-      
+    
   <script src="nav.js"></script>   
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+  <script>
+    let countries = ["United States", "Canada", "Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", 
+    "Anguilla", "Antarctica", "Antigua and/or Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", 
+    "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", 
+    "Bosnia and Herzegovina", "Botswana", "Bouvet Island", "Brazil", "British lndian Ocean Territory", "Brunei Darussalam", 
+    "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Cape Verde", "Cayman Islands", "Central African Republic", 
+    "Chad", "Chile", "China", "Christmas Island", "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo", "Cook Islands", 
+    "Costa Rica", "Croatia (Hrvatska)", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", 
+    "East Timor", "Ecudaor", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Falkland Islands (Malvinas)", 
+    "Faroe Islands", "Fiji", "Finland", "France", "France, Metropolitan", "French Guiana", "French Polynesia", "French Southern Territories", 
+    "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala",
+     "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Heard and Mc Donald Islands", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", 
+     "Indonesia", "Iran (Islamic Republic of)", "Iraq", "Ireland", "Israel", "Italy", "Ivory Coast", "Jamaica", "Japan", "Jordan", "Kazakhstan"
+     , "Kenya", "Kiribati", "Korea, Democratic People's Republic of", "Korea, Republic of", "Kuwait", "Kyrgyzstan", 
+     "Lao People's Democratic Republic", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libyan Arab Jamahiriya", "Liechtenstein", 
+     "Lithuania", "Luxembourg", "Macau", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands",
+      "Martinique", "Mauritania", "Mauritius", "Mayotte", "Mexico", "Micronesia, Federated States of", "Moldova, Republic of", "Monaco", 
+      "Mongolia", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "Netherlands Antilles", 
+      "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfork Island", "Northern Mariana Islands", "Norway", 
+      "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcairn", "Poland", "Portugal", 
+      "Puerto Rico", "Qatar", "Reunion", "Romania", "Russian Federation", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", 
+      "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Seychelles", 
+      "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Georgia South Sandwich Islands",
+       "Spain", "Sri Lanka", "St. Helena", "St. Pierre and Miquelon", "Sudan", "Suriname", "Svalbarn and Jan Mayen Islands", "Swaziland", 
+       "Sweden", "Switzerland", "Syrian Arab Republic", "Taiwan", "Tajikistan", "Tanzania, United Republic of", "Thailand", "Togo", "Tokelau", 
+       "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", 
+       "United Arab Emirates", "United Kingdom", "United States minor outlying islands", "Uruguay", "Uzbekistan", "Vanuatu", 
+       "Vatican City State", "Venezuela", "Vietnam", "Virigan Islands (British)", "Virgin Islands (U.S.)", "Wallis and Futuna Islands", 
+       "Western Sahara", "Yemen", "Yugoslavia", "Zaire", "Zambia", "Zimbabwe"];
+
+
+    let el = document.querySelector('.countriesList')
+    
+    countries.forEach(e => {
+      el.insertAdjacentHTML('beforeend', '<option value=' + e + '>' + e + '</option>');
+    })
+
+   
+  </script>
   </body>
 </html>
