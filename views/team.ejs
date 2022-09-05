@@ -1,245 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="About The Investment Society, Unilag.">
-    <meta name="TIS, UNILAG, ULSIS, Investment, Investment Society">
-    <meta name="author" content="Ani Chidera">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="About The Investment Society, Unilag." />
+    <meta name="TIS, UNILAG, ULSIS, Investment, Investment Society" />
+    <meta name="author" content="Ani Chidera" />
     <title>Team - The Investment Society</title>
-    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661278/favicon_iul6xm.png">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/main.css">
-</head>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661278/favicon_iul6xm.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+   
+    <link rel="stylesheet" href="/main.css" />
+  </head>
 
   <body>
     <style>
-      body{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
-    }
-  
-    h1, h2{
-      color: white;
-      font-weight: 300;
-    }
-  
-    h3, h6{
-      color: #494747;
-    }
-    .h9{
-      font-size: 20px;
-    }
-    h6, h4{
-      font-weight: 900;
-    }
-    .div{
-      height: auto;
-      width: 100%;
-      background-image: url('https://res.cloudinary.com/theinvestmentsociety/image/upload/v1598365644/Background_header_ykzygz.png');
-      padding: 10px;
-      
-    }
-    .card{
-      border: none;
-      height: 400px;
-    }
-    .card-deck{
-      width: 70%;
-      margin: auto;
-      padding: 0;
-    }
-    .card-img-top{
-      height: 70%;
-      width: 100%;
-      object-fit: cover;
-      object-position: 10% 10%; 
-      border-top-left-radius: .55rem;
-      border-top-right-radius: .55rem;
-    }
-    .card-body{
-      flex: none;
-      height: 120px;
-      border: 1px solid rgba(0,0,0,.125);
-    border-radius: .55rem;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    box-shadow: 0px 0px 7px .2px rgba(0,0,0,0.2); 
-    }
+      body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+      }
 
-    .card-deck .card {
-    margin-bottom: 60px;
-}
-    @media screen and (max-width:768px){
-      
-   
-     
+      h1,
+      h2 {
+        color: white;
+        font-weight: 300;
+      }
 
-    h1{
-      font-size: 22px;
-    }
-    .h9{
-      font-size: 15px;
-    }
-    h2{
-      font-size: 20px;
-    }
+      h3,
+      h6 {
+        color: #494747;
+      }
+      .h9 {
+        font-size: 20px;
+      }
+      h6,
+      h4 {
+        font-weight: 900;
+      }
+      .div {
+        height: auto;
+        width: 100%;
+        background-image: url("https://res.cloudinary.com/theinvestmentsociety/image/upload/v1598365644/Background_header_ykzygz.png");
+        padding: 10px;
+      }
 
-    .div{
-      height: auto;
-      width: 100%;
-     
-      padding: 10px;
-    }
-    .card-deck{
-      width: 80%;
-      
-    }
-    .card-deck .card {
-    margin-bottom: 30px;
-}
-    .card-img-top{
-      height: 60%;}
-    
+      .flex-card-deck {
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 15px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-bottom: 40px;
+      }
 
-    }
-    
+      .flex-card {
+        width: 100%;
+        max-width: 300px;
+        flex: 0 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        flex-grow: 1;
+        min-width: auto;
+        min-height: 300px;
+        border-radius: 22px;
+        box-shadow: 0px 0px 80px rgba(57, 84, 130, 0.1);
+        text-align: center;
+        justify-content: flex-start;
+      }
+
+      .card-img-top {
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 10% 10%;
+        border-top-left-radius: 0.55rem;
+        border-top-right-radius: 0.55rem;
+      }
+      .card-body {
+        width: 100%;
+        flex: none;
+        height: 120px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.55rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 22px;
+        }
+        .h9 {
+          font-size: 15px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+
+        .div {
+          height: auto;
+          width: 100%;
+
+          padding: 10px;
+        }
+        .card-img-top {
+          height: 60%;
+        }
+      }
+
+      @media (min-width: 640px) {
+        .card {
+          min-width: auto;
+        }
+      }
     </style>
 
-      <div class="content">
-          <header class="header"><nav >
-            <div class="logo-div">
-              
-         <a href="/home"><img src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592743161/logo_1_bdallx.png" alt="" class="img-fluid container logo"></a> 
-            </div> 
-            <ul class="nav nav-links">
-              <li class=""><a class="nav-link" href="/home">Home</a></li>
-              <li class=""><a class="nav-link" href="/about">About</a></li>
-              <li class=""><a class="nav-link active" href="/team">Team</a></li>
-              <li class=""><a class="nav-link" href="/events">Events</a></li>
-              <li class=""><a class="nav-link" href="/gallery">Gallery</a></li>
-              <li class=""><a class="nav-link" id="join-link" href="/join">Join Us </a></li>
-             </ul>
+    <div class="content">
+      <header class="header">
+        <nav>
+          <div class="logo-div">
+            <a href="/home"
+              ><img
+                src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592743161/logo_1_bdallx.png"
+                alt=""
+                class="img-fluid container logo"
+            /></a>
+          </div>
+          <ul class="nav nav-links">
+            <li class=""><a class="nav-link" href="/home">Home</a></li>
+            <li class=""><a class="nav-link" href="/about">About</a></li>
+            <li class=""><a class="nav-link active" href="/team">Team</a></li>
+            <li class=""><a class="nav-link" href="/events">Events</a></li>
+            <li class=""><a class="nav-link" href="/gallery">Gallery</a></li>
+            <li class="">
+              <a class="nav-link" id="join-link" href="/join">Join Us </a>
+            </li>
+          </ul>
 
-             <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle btn-special" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Menu
-              </a>
-            
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="/home">Home</a>
-                <a class="dropdown-item" href="/about">About</a>
-                <a class="dropdown-item actives" href="/team">Team</a>
-                <a class="dropdown-item" href="/events">Events</a>
-                <a class="dropdown-item" href="/gallery">Gallery</a>
-                <a class="dropdown-item" id="join-link" href="/join">Join Us</a>
-              </div>
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle btn-special"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="/home">Home</a>
+              <a class="dropdown-item" href="/about">About</a>
+              <a class="dropdown-item actives" href="/team">Team</a>
+              <a class="dropdown-item" href="/events">Events</a>
+              <a class="dropdown-item" href="/gallery">Gallery</a>
+              <a class="dropdown-item" id="join-link" href="/join">Join Us</a>
             </div>
-          </nav>
-        
-        </header>
-        <div class="div div3" style="text-align: center;">
-          <br>
-          <h2>Meet the team</h2>
-          <br>
-        </div>
-        <br>
-              <div class="team-div container">
-                
-                <br>
-                <div class="row card-deck">
-                  <div class="card col-sm-6"  >
-                    <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661297/Timi_dhu5wn.jpg" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">Timileyin Idowu</h4>
-                      <p class="card-text">President</p>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="card col-sm-6" >
-                    <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661264/Blessing_vvfmer.jpg" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">Blessing Ojo</h4>
-                      <p class="card-text">VP and Director, Corporate Communications</p>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <div class="row card-deck">
-                  <div class="card col-sm-6" >
-                    <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661281/Ezekiel_n1itdw.jpg" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">Ezekiel Shojupe</h4>
-                      <p class="card-text">Director, Programs</p>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="card col-sm-6" >
-                    <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661287/Qaozara_zxuehu.jpg" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">Qaozara Adepeju</h4>
-                      <p class="card-text">Director, Management Consulting</p>
-                    </div>
-                  </div>
-                  <br>
-                </div>
-                <br>
-                <div class="row card-deck">
-
-                  <div class="card col-sm-6" >
-                    <img class="card-img-top" src="" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">Dr. Peter Amah</h4>
-                      <p class="card-text">Staff Advisor</p>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="card col-sm-6" >
-                    <img class="card-img-top" src="https://res.cloudinary.com/theinvestmentsociety/image/upload/v1592661293/Tope_jv2pz1.jpg" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">TemiTope Aiyegbusi</h4>
-                      <p class="card-text">Director, Media & Publicity</p>
-                    </div>
-                  </div>
-                  <br>
-
-                  
-                </div>
-                </div>
-              
-                
-              </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <footer class="newsletter page-footer">
-              <br><br>
-              <form action="/action_page.php">
-                <h6>Subscribe to our Newsletter</h6>
-                <div class="form-group container">
-                  <input type="email" class="form-control input-subscribe" placeholder="Email Address" id="email">
-                  <br>
-                  <button type="submit" class="btn btn-primary btn-subscribe">Subscribe</button>
-                </div>
-                
-                <br><br>
-              </form>
-            </footer>
-          
+          </div>
+        </nav>
+      </header>
+      <div class="div div3" style="text-align: center">
+        <br />
+        <h2>Meet the team</h2>
+        <br />
       </div>
-      
+      <br />
+      <div class="team-div container">
+        <div class="flex-card-deck">
+          <% teams.forEach((team)=> { %>
 
-      
-      
-      
-  <script src="nav.js"></script>   
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+          <div class="flex-card">
+            <img class="card-img-top" src=<%- team.profile_pic ||
+            `https://eu.ui-avatars.com/api/?name=${
+            encodeURIComponent(team.name) }&size=250` %> alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title"><%= team.name %></h4>
+              <p class="card-text"><%= team.role %></p>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+
+      <footer class="newsletter page-footer">
+        <br /><br />
+        <form action="/action_page.php">
+          <h6>Subscribe to our Newsletter</h6>
+          <div class="form-group container">
+            <input
+              type="email"
+              class="form-control input-subscribe"
+              placeholder="Email Address"
+              id="email"
+            />
+            <br />
+            <button type="submit" class="btn btn-primary btn-subscribe">
+              Subscribe
+            </button>
+          </div>
+
+          <br /><br />
+        </form>
+      </footer>
+    </div>
+
+    <script src="nav.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+   
   </body>
 </html>
